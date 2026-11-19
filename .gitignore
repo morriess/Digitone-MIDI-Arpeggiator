@@ -2,3 +2,4 @@ out/
 *.syx
 *.bin
 __pycache__/
+.cache/
