@@ -77,6 +77,19 @@ only the KEYBOARD key).
 
 Details: [CORE5-NOTES.md](CORE5-NOTES.md). Not tested: real hardware with real MIDI devices.
 
+## To do later
+
+- **Try it on the unit** with Drum Mode (DigiArp on one MIDI track, Drum Mode on another).
+- **Then offer the rename to DigiArp's author** as a pull request to
+  aleks-karachevtsev/Digitone-MIDI-Arpeggiator: only the first commit of this branch (the
+  rename, 3 files), not the build script and test, which are specific to building with Drum
+  Mode. If it's accepted, the official DigiArp combines with core 5.x mods and this fork is no
+  longer needed.
+- **Optional tidying:** make `core-5.3` the fork's default branch (Settings > General).
+- **Rerun DigiArp's own 8 tests and tests/test_with_drum_mode.py** against the latest Drum Mode
+  (last run: DigiArp's tests with Drum Mode 0.8, the combined test with 0.9.3; saving and
+  loading checked with 0.10).
+
 ## The safety net (not done)
 
 A possible extra: release arp notes on the physical key-up through core's `ev_key`, against
