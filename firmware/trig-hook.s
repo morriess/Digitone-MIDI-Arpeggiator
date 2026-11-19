@@ -32,8 +32,10 @@ dn144_worker_tail:
         move.b  0x419b14ec,%d0
         rts
 
-        .globl fw_note_on,fw_note_off
-fw_note_on:
+        /* core 5.3 exports its own fw_note_on/fw_note_off (the track-level note routines), so DigiArp's names for
+           the MIDI senders are its own: digiarp_midi_on(ch, note, vel), digiarp_midi_off(ch, note). */
+        .globl digiarp_midi_on,digiarp_midi_off
+digiarp_midi_on:
         jmp     0x400ee232
-fw_note_off:
+digiarp_midi_off:
         jmp     0x400ee29e

@@ -29,7 +29,7 @@ extern volatile uint32_t fw_timeline;
 extern volatile uint32_t fw_transport;
 extern void fast_wake_at(uint32_t);
 extern void fast_schedule(uint32_t);
-extern void fw_note_on(int,int,int),fw_note_off(int,int);
+extern void digiarp_midi_on(int,int,int),digiarp_midi_off(int,int);
 void *arp_sound(void *owner,int track)
 {
     if((unsigned)(track-4)>=4) return stock_sound(owner,track);
@@ -103,7 +103,7 @@ int live_input(int source,int track,int note,int velocity){
 }
 static void emit(void *p,int t,int ch,int n,int v,int on){
     (void)p;(void)t;
-    if(on)fw_note_on(ch,n,v);else fw_note_off(ch,n);
+    if(on)digiarp_midi_on(ch,n,v);else digiarp_midi_off(ch,n);
 }
 void live_poll(void){
     int transport_running=(fw_transport==1);

@@ -1,11 +1,11 @@
 {
   "id": "digiarp-midi",
-  "version": "0.9-dev11",
+  "version": "0.9-dev11-core5",
   "title": "DigiArp MIDI",
   "category": "Sequencer",
   "author": "DigiArp project",
   "license": "GPL-2.0-or-later",
-  "description": "Experimental MIDI arpeggiator for Digitone MK1 OS 1.44; hardware verification required",
+  "description": "Experimental MIDI arpeggiator for Digitone MK1 OS 1.44; hardware verification required. Rebuilt for elekloader core 5.2.1+ (core 5.3 beside Drum Mode): the MIDI senders renamed, nothing else changed",
   "device": "digitone-mk1",
   "os": "1.44",
   "sources": [
@@ -138,7 +138,7 @@
     }
   ],
   "resources": {
-    "core": "4.1",
+    "core": "5.2.1",
     "names": [
       "projdata:DARP"
     ]
