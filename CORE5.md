@@ -49,7 +49,7 @@ and seq-events), builds DigiArp from this branch, and writes:
 | `out/Digitone_OS1.44_DigiArp_core5.syx` | core 5.3 + DigiArp | **DAC5** |
 | `out/Digitone_OS1.44_DrumMode_DigiArp.syx` | core 5.3 + seq-events 0.1 + Drum Mode + DigiArp | **DMA1** |
 
-Install as in the [Drum Mode manual](https://github.com/morriess/Digitone-Drum-Mode/blob/main/drum-mode/docs/MANUAL.md#installing).
+Install as in the [Drum Mode manual](https://github.com/morriess/Digitone-Drum-Mode/blob/main/docs/MANUAL.md#installing).
 Both files are built from your own copy of Elektron's OS, so they're for your own unit only:
 don't upload or pass them on. This repo never contains them.
 
